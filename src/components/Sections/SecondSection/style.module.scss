@@ -1,0 +1,53 @@
+.sectionBox{
+    width: 100%;
+    min-height: 600px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        opacity: .2;
+
+        z-index: 1;
+    }
+    .textBox{
+        width: 100%;
+        max-width: 640px;
+
+        position: relative;
+        z-index: 2;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+
+        padding: 0 2rem;
+        text-align: center
+    }
+};
+
+@media screen and (min-width: 830px){
+    .sectionBox{
+        justify-content: flex-start;
+        align-items: start;
+
+        .textBox{
+            width: 60%;
+            max-width: 800px;
+            margin-left: 40%;
+            margin-top: 60px;
+
+            align-items: flex-start;
+            text-align: start;
+        }
+    }
+}
