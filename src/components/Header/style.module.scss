@@ -1,0 +1,38 @@
+.headerBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: var(--background-color-blue);
+    padding: 24px;
+
+    img{
+        height: 3.6875rem;
+        width: 3.0625rem;
+    }
+
+    ul{
+        display: none;
+    };
+
+    #login-button{
+        display: none;
+    };
+
+    #create-account{
+        padding: 0 5rem;
+        height: 3.75rem;
+    }
+}
+
+// ul{
+//     display: flex;
+//     align-items: center;
+//     gap: 2rem;
+//     li{
+//         display: flex;
+//         align-items: center;
+//         justify-content: flex-start;
+//     }
+// }
