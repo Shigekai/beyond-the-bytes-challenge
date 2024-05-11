@@ -90,9 +90,10 @@
         .mainDivDesk{
             display: flex;
             .textDivDesk{
-                padding-top: 12%;
+                padding-top: 10%;
                 padding-bottom: 1rem;
                 padding-left: 2rem;
+                padding-right: 2rem;
 
                 display: flex;
                 flex-direction: column;
@@ -119,7 +120,7 @@
                     z-index: -1;
                 }
                 .headlineBoxDesk{
-                    margin-top: 30%;
+                    margin-top: 20%;
                     backdrop-filter: blur(12px);
                     padding: 2rem;
                     gap: .8rem;

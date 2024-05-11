@@ -5,6 +5,7 @@ Bem-vindo ao Beyond the Bytes Challenge! Este é um desafio de front-end projeta
 ## Instruções de Uso
 
 Para executar o projeto localmente, execute os comandos:
+
 ``npm install``
 
 
