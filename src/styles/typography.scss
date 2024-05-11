@@ -1,0 +1,61 @@
+.title{
+    font-family: var(--font-primary);
+    font-weight: 700;
+    line-height: 1.3;
+
+    &.black{
+        color: var(--font-color-black);
+    }
+    &.white{
+        color: var(--font-color-white);
+    }
+
+    &.one{
+        font-size: clamp(2.375rem, 6vw, 3rem);
+    }
+    &.two{
+        font-size: clamp(1.875rem, 4vw, 2.375rem);
+    }
+    &.three{
+        font-size: 1.125rem;
+    }
+}
+
+.text{
+    font-family: var(--font-secondary);
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.06rem;
+    line-height: 1.4rem;
+    &.black{
+        color: var(--font-color-black);
+    }
+    &.white{
+        color: var(--font-color-white);
+    }
+};
+
+.headline{
+    font-family: var(--font-secondary);
+
+    &.black{
+        color: var(--font-color-black);
+    }
+    &.white{
+        color: var(--font-color-white);
+    }
+
+    &.large{
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    &.medium{
+        font-size: 0.875rem;
+        font-weight: 200;
+        font-style: italic;
+    }
+    &.small{
+        font-size: 0.75rem;
+        font-weight: 200;
+    }
+}

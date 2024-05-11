@@ -1,0 +1,48 @@
+.sectionBox{
+    background-color: var(--background-color-blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .imgDiv{
+        width: clamp(180px, 40vw, 400px);
+        height: clamp(180px, 40vw, 400px);
+        margin-top: 1rem;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .textDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 1rem;
+        padding: 2rem 1rem;
+
+        width: 80%;
+        max-width: 600px;
+        line-height: 1.4rem;
+        letter-spacing: 0.05rem;
+
+        button{
+            margin-top: 2rem;
+            width: 80%;
+        }
+    }
+};
+
+@media screen and (min-width: 830px){
+    .sectionBox{
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 3rem;
+        button{
+            max-width: 300px;
+        }
+    }
+}
