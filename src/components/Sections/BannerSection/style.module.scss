@@ -2,7 +2,8 @@
     background-color: var(--background-color-blue);
     display: flex;
     justify-content: center;
-    > div:first-child{
+
+    .mainDiv{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -29,14 +30,22 @@
             justify-content: center;
             align-items: center;
             position: relative;
+            z-index: 1;
+            img{
+                height: 100%;
+                width: 100%;
+                border-radius: 8px;
+                z-index: 1;
+                position: relative;
+            }
             .imgWrap{
-                img{
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 8px;
-                    z-index: 1;
-                    position: relative;
-                }
+                height: 100%;
+                width: 100vw;
+                position: absolute;
+                z-index: 2;
+
+                background: rgb(0,11,66);
+                background: radial-gradient(circle, rgba(0,11,66,0) 45%, rgba(0,11,66,1) 100%);
             }
                 .headlineBox{
                     z-index: 2;
@@ -62,6 +71,70 @@
                         justify-content: center;
                     }
                 }
+        }
+    }
+    .mainDivDesk{
+        display: none;
+    }
+};
+
+@media screen and (min-width: 830px){
+    .sectionBox{
+        width: 100vw;
+        min-height: 680px;
+        background: rgb(0,11,66);
+        background: linear-gradient(270deg, rgba(0,11,66,0) 11%, rgba(0,11,66,1) 60%);
+        .mainDiv{
+            display: none;
+        }
+        .mainDivDesk{
+            display: flex;
+            .textDivDesk{
+                padding-top: 12%;
+                padding-bottom: 1rem;
+                padding-left: 2rem;
+
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                max-width: 40%;
+                button{
+                    max-width: 180px;
+                    margin-top: 1rem;
+                }
+            }
+            .imgDivDesk{
+                position: relative;
+                width: 60vw;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .bannerImgDesk{
+                    position: absolute;
+                    height: 100%;
+                    width: 60vw;
+                    object-fit: cover;
+                    z-index: -1;
+                }
+                .headlineBoxDesk{
+                    margin-top: 30%;
+                    backdrop-filter: blur(12px);
+                    padding: 2rem;
+                    gap: .8rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    > div:first-of-type{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+
+            }
         }
     }
 }

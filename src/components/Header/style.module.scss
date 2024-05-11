@@ -31,6 +31,14 @@
     .headerBox{
         justify-content: space-between;
         flex-wrap: nowrap;
+        background: rgb(0,11,66);
+        background: linear-gradient(270deg, rgba(0,11,66,0) 11%, rgba(0,11,66,1) 80%);
+
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100vw;
+        z-index: 5;
         .logoSmall{
             display: none;
         };
@@ -62,6 +70,7 @@
             display: flex;
             gap: 2rem;
             align-items: center;
+            padding: 1rem;
             li{
                 display: flex;
                 align-items: center;

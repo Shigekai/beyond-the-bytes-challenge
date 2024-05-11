@@ -26,7 +26,7 @@ export const Header = () => {
                 <HeaderOption option={"Investimentos"}/>
                 <HeaderOption option={"Blog"}/>
                 <HeaderOption option={"Ajuda"}/>
-                <IoEllipsisHorizontalCircleOutline size={24} color="white"/>
+                <IoEllipsisHorizontalCircleOutline size={32} color="white"/>
             </ul>
             
             <div className={style.buttonsDiv}>
