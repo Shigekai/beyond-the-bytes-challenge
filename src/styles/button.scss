@@ -19,7 +19,7 @@
         height: 3.125rem;
     }
     &.mobile{
-        width: clamp(40vw, 60vw, 80vw);
+        width: clamp(20vw, 50vw, 80vw);
         height: 3.75rem;
     }
     &.none{
@@ -59,6 +59,7 @@
 
         &:hover{
             background-color: var(--background-color-white);
+            color: var(--font-color-blue);
         }
     }
 }

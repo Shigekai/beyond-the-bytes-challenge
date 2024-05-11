@@ -8,31 +8,69 @@
     padding: 24px;
 
     img{
-        height: 3.6875rem;
-        width: 3.0625rem;
+        height: 6.4vh;
+        width: 9.25vw;
+    }
+
+    .logoLarge{
+        display: none;
     }
 
     ul{
         display: none;
     };
 
-    #login-button{
-        display: none;
-    };
-
-    #create-account{
-        padding: 0 5rem;
-        height: 3.75rem;
+    .buttonsDiv{
+        .loginButton{
+            display: none;
+        };
     }
 }
 
-// ul{
-//     display: flex;
-//     align-items: center;
-//     gap: 2rem;
-//     li{
-//         display: flex;
-//         align-items: center;
-//         justify-content: flex-start;
-//     }
-// }
+@media screen and (min-width: 1050px){
+    .headerBox{
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        .logoSmall{
+            display: none;
+        };
+        .logoLarge{
+            display: block;
+            object-fit: cover;
+        };
+        .hamburguerMenu{
+            display: none;
+        }
+        .createButton{
+            margin-left: 1%;
+        }
+        .buttonsDiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1.3rem;
+            .loginButton{
+                display: block;
+            }
+        }
+        img{
+            height: clamp(70px, 2vh, 80px);
+            width: clamp(150px, 3vw, 300px);
+        };
+
+        ul{
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            li{
+                display: flex;
+                align-items: center;
+                gap: .2rem
+            }
+        }
+
+        button{
+            max-width: 180px;
+        }
+    }   
+}

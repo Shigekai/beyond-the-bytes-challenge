@@ -21,7 +21,9 @@ export const BannerSection = () => {
                 </div>
 
                 <div className={style.imgDiv}>
-                        <img src={Noronha} alt="Marcio Noronha sentado em um escritório" />
+                        <div className={style.imgWrap}>
+                            <img src={Noronha} alt="Marcio Noronha sentado em um escritório" />
+                        </div>
                         <div className={style.headlineBox}>
                             <p className="headline large white">MARCIO NORONHA</p>
                             <p className="headline medium white">{`O "papa"da análise técnica no Brasil`}</p>

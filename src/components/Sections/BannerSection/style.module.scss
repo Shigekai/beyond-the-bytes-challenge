@@ -28,6 +28,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            position: relative;
+            .imgWrap{
                 img{
                     height: 100%;
                     width: 100%;
@@ -35,6 +37,7 @@
                     z-index: 1;
                     position: relative;
                 }
+            }
                 .headlineBox{
                     z-index: 2;
                     position: absolute;
