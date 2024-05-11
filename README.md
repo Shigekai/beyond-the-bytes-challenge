@@ -1,8 +1,13 @@
-# React + Vite
+# Beyond the Bytes Challenge
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo ao Beyond the Bytes Challenge! Este é um desafio de front-end projetado para demonstrar habilidades em CSS e React.
 
-Currently, two official plugins are available:
+## Instruções de Uso
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Para executar o projeto localmente, execute os comandos:
+``npm install``
+
+
+``npm run dev``
+
+Depois é só acessar o link local fornecido pelo Vite
